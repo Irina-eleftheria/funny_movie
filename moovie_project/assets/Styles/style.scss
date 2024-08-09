@@ -181,7 +181,14 @@ section {
 
 // Блок по игре престолов
 // Цитаты
+#gameofthones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .GOT__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +196,7 @@ section {
   // color: rgb(0, 143, 0);
 }
 .GOT__quotes {
-  border: 2px solid goldenrod;
+  // border: 2px solid goldenrod;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -238,6 +245,7 @@ section {
   gap: 1.5rem;
   justify-content: space-evenly;
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .GOTcard {
   display: flex;
@@ -246,6 +254,7 @@ section {
   width: 215px;
   height: 365px;
   padding: 0.3rem;
+  margin-bottom: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s ease;
   // для переворота карточки
@@ -297,10 +306,59 @@ section {
 .GOTcard.flipped .GOTcard__back {
   transform: rotateY(0deg); //Поднимаем заднюю сторону
 }
-
+// сериал игра престолов
+.GOTtvSeries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.GOTtvSeries_logoContainer {
+  background-color: white;
+  width: 70%;
+  color: black;
+  padding: 0.5rem;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.GOTtvSeries_logo {
+  padding-top: 0.5rem;
+  width: 100%;
+}
+.GOTtvSeries__box {
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+.GOTtvSeries__box:hover {
+  transform: scale(1.03);
+}
+.GOTtvSeries_img {
+  width: 200px;
+  border-radius: 10px;
+}
+.GOTtvSeries_imgContainer {
+  margin-right: 1rem;
+}
+.GOTtvSeries_textContainer {
+  padding: 0.5rem;
+}
+.GOTtvSeries__p {
+  font-size: 14px;
+}
+.GOTtvSeries__a {
+  color: goldenrod;
+  text-decoration: none;
+}
 // harryPotter
 
-.HP__container{
+.HP__container {
   margin: 0px;
   text-align: center;
   min-height: 100%;
@@ -308,21 +366,19 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 40px;
-  
 }
 
-
-.mid-container{
+.mid-container {
   padding: 20px 15% 20px 15%;
   align-self: center;
 }
 
-#HP__quote{
+#HP__quote {
   font-size: 11pt;
   //font-weight: bold;
 }
 
-#author{
+#author {
   font-size: 12pt;
   font-weight: bold;
   font-style: italic;
@@ -332,21 +388,21 @@ section {
   margin-right: 20px;
 }
 
-.HP__button{
-  color: white; 
+.HP__button {
+  color: white;
   font-size: 18pt;
-  background: #3E0C10;
+  background: #3e0c10;
   border: none;
   padding: 10px 15px;
   border-radius: 3px;
-font-family: 'Walter Turncoat';  text-decoration: none;
+  font-family: "Walter Turncoat";
+  text-decoration: none;
   cursor: pointer;
 }
 
-.HP__button:hover{
-  color: #3E0C10;
+.HP__button:hover {
+  color: #3e0c10;
   background: transparent;
   padding: 8px 13px;
   border: 2px solid #c51120;
 }
-

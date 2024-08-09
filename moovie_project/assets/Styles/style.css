@@ -171,7 +171,15 @@ section {
     font-size: 24px;
   }
 }
+#gameofthones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .GOT__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -179,7 +187,6 @@ section {
 }
 
 .GOT__quotes {
-  border: 2px solid goldenrod;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -233,6 +240,7 @@ section {
   gap: 1.5rem;
   justify-content: space-evenly;
   padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .GOTcard {
@@ -242,6 +250,7 @@ section {
   width: 215px;
   height: 365px;
   padding: 0.3rem;
+  margin-bottom: 1.5rem;
   border-radius: 10px;
   transition: transform 0.3s ease;
   position: relative;
@@ -303,6 +312,65 @@ section {
   transform: rotateY(0deg);
 }
 
+.GOTtvSeries {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.GOTtvSeries_logoContainer {
+  background-color: white;
+  width: 70%;
+  color: black;
+  padding: 0.5rem;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.GOTtvSeries_logo {
+  padding-top: 0.5rem;
+  width: 100%;
+}
+
+.GOTtvSeries__box {
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.GOTtvSeries__box:hover {
+  transform: scale(1.03);
+}
+
+.GOTtvSeries_img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.GOTtvSeries_imgContainer {
+  margin-right: 1rem;
+}
+
+.GOTtvSeries_textContainer {
+  padding: 0.5rem;
+}
+
+.GOTtvSeries__p {
+  font-size: 14px;
+}
+
+.GOTtvSeries__a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
 .HP__container {
   margin: 0px;
   text-align: center;
@@ -334,7 +402,7 @@ section {
 .HP__button {
   color: white;
   font-size: 18pt;
-  background: #3E0C10;
+  background: #3e0c10;
   border: none;
   padding: 10px 15px;
   border-radius: 3px;
@@ -344,7 +412,7 @@ section {
 }
 
 .HP__button:hover {
-  color: #3E0C10;
+  color: #3e0c10;
   background: transparent;
   padding: 8px 13px;
   border: 2px solid #c51120;
